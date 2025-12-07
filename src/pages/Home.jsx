@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import PrimaryButton from "../components/PrimaryButton";
 const Home = () => {//arrow function
   const navigate = useNavigate();//declared use navigate function inside navigate variable
 
@@ -30,22 +30,15 @@ const Home = () => {//arrow function
         <div className="flex flex-wrap gap-8 mt-12 justify-center w-full">
 
        
-          <button
-            onClick={() => navigate("/login")}
-            className="w-full max-w-xs bg-white text-red-600 font-semibold text-lg md:text-xl py-6 rounded-2xl shadow-xl
-                       hover:bg-red-100 hover:-translate-y-2 transition-all duration-300"
-          >
-           LOGIN
-          </button>
+          <PrimaryButton 
+            title="LOGIN" 
+            onClick={() => navigate("/login")} 
+          />
 
-         
-          <button
-           onClick={() => navigate("/sign-up")}
-            className="w-full max-w-xs bg-white text-red-600 font-semibold text-lg md:text-xl py-6 rounded-2xl shadow-xl
-                       hover:bg-red-100 hover:-translate-y-2 transition-all duration-300"
-          >
-            SIGN-UP
-          </button>
+          <PrimaryButton 
+            title="SIGN-UP" 
+            onClick={() => navigate("/sign-up")} 
+          />
 
         </div>
       </div>
