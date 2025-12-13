@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import AuthCard from "../components/AuthCard";
 import AuthInput from "../components/AuthInput";
 import AuthButton from "../components/AuthButton";
@@ -8,7 +7,7 @@ import BackButton from "../components/BackButton";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");//using usestate for displaying in browser rather than inspect
   const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
@@ -23,7 +22,7 @@ const AdminLogin = () => {
 
   return (
     <AuthCard>
-      <h2 className="text-2xl font-bold text-center text-red-600 mb-6">
+      <h2 className="text-2xl font-bold text-center text-green-600 mb-6">
         🔐 Admin Login
       </h2>
 

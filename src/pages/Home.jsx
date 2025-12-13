@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../components/PrimaryButton";
 
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -25,6 +26,8 @@ const Home = () => {
       >
         🔐 Admin
       </button>
+
+
 
       {/* Center Content */}
       <div className="flex flex-col items-center justify-center flex-grow mt-4 sm:mt-8 relative z-10 w-full max-w-4xl">
